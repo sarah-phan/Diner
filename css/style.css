@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    font-family: 'Quicksand', sans-serif;
+}
+a, a:hover{
+    text-decoration: none;
+}
+i{
+    color: #ff6600;
+    border-radius: 6px;
+}
+.title h1{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.title p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+p{
+    margin: 0;
+}
+
+
+/* HEADER */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+}
+.header__right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+header a, a:hover{
+    color: #fff;
+}
+header i{
+    color: white;
+}
+/* Search form */
+.header__form{
+    position: relative;
+}
+.header__icon{
+    position: absolute;    
+}
+.header__form input{
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    position: relative;
+}
+.header__icon i{
+    color: rgba(22, 28, 45, 0.7);
+    position: absolute;
+    bottom: 14px;
+    left: 221px;
+}
+/* Light Theme */
+#myBody{
+    background-color:white;
+}
+#switchButton .fa-sun {
+    display: none;
+}
+#switchButton .fa-moon {
+    display: block;
+}
+.header__dark i{
+    font-size: 21px;
+}
+/* Dark Theme */
+.dark #myBody{
+    background-color:black;
+}
+.dark #switchButton .fa-sun {
+    display: block;
+}
+.dark #switchButton .fa-moon {
+    display: none;
+}
+/* Nav */
+.header__overlay {  
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgb(6 3 0 / 77%); 
+    overflow-y: hidden;
+    transition: 0.5s; 
+}
+.header__menu {
+    position: relative;
+    top: 19%;
+    width: 100%;
+    text-align: center; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+}
+.header__overlay a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block; 
+    transition: 0.3s; 
+    font-weight: 600;
+}
+.header__menu a{
+    line-height: 50px;
+}
+.header__overlay a:hover {
+    color: #ff6600;
+}
+.header__overlay .closebtn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: #ff6600;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 6px;
+}
+.header__nav span{
+      cursor: pointer;
+      font-size: 30px;
+      padding: 0 8px;
+      text-align: center;
+}
+
+/*Book*/
+.book{
+    background-color: #ff6600;
+}
+.book__banner{
+    background-image: url(../img/banner3.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.book__img{
+    position: absolute;
+    background-color: rgb(16 15 19 / 46%);
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.book .col{
+    max-width: 100%;
+    padding: 0;
+}
+.book .title p{
+    color:#fff;
+}
+.book__content p{
+    color: #ffdfc9;
+}
+.book__comment i{
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.book__deals:hover i, .book__food:hover i{
+    color: #ffc600;
+}
+.book .content p{
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.book__comment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.book__comment a{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: black;
+    display: block;
+}
+.book__comment p{
+    font-size: 18px;
+    line-height: 28px;
+}

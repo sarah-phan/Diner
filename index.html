@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diner</title>
-</head>
-<body>
+    <title>Diner Restaurant</title>
+
+    <!-- BOOTSTRAP 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- FONT QUICKSAND -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- FONT PACIFICO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ANIMATE.STYLE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="myBody">
+    <header>
+        <div class="container bg-dark">
+            <div class="header__logo">
+                <h1>
+                    <a href="index.html">Diner</a>
+                </h1>
+            </div>
+            <div class="header__right">
+                <div class="header__search">
+                    <div class="header__form" >
+                        <form >
+                            <input id="myBody" type="search" placeholder="Search here..">
+                        </form>
+                    </div>
+                    <div class="header__icon">
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__dark">
+                    <button class="btn" id="switchButton">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                </div>
+                <div class="header__nav" >
+                    <div class="header__overlay animate__animated animate__zoomIn"  id="myNav" >
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <div class="header__menu">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Blog</a>
+                            <a href="#">404</a>
+                            <a href="#">Landing Page</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Shot Codes</a>
+                            <a href="#">Email</a>
+                        </div>
+                    </div>
+                    <span onclick="openNav()" >
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="dinerCarousel"></section>
+    <section class="about"></section>
+    <section class="book">
+        <div class="row">
+          <div class="col-6">
+            <div class="book__banner">
+                <div class="book__img"></div>
+            </div>
+          </div>
+          <div class="col-6 px-4 py-3 py-3">
+            <div class="book__content p-md-5 p-3">
+                <div class="title">
+                    <p>More than 3000 Restaurants</p>
+                    <h1>Book a table easily at the best price</h1>
+                </div>
+                <div class="content">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+                </div>
+                <div class="book__comment mt-5">
+                   <div class="book__deals">
+                        <i class="fa fa-thumbs-up mb-4"></i>
+                        <a href="#">
+                            Best Deals
+                        </a>
+                        <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                   </div>
+                   <div class="book__food pl-5">
+                        <i class="fa fa-utensils mb-4"></i>
+                        <a href="#">
+                            Best Food
+                        </a>
+                        <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="news"></section>
+    <section class="type"></section>
+    <section class="number"></section>
+    <section class="video"></section>
+    <section class="post"></section>
+    <section class="testimonial"></section>
+    <footer></footer>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+    <!-- DARK THEME -->
+    <script>
+        document.getElementById("switchButton").onclick = function () { document.getElementById("myBody").classList.toggle("dark"); };
+    </script>
+    
+    <!-- SUBMENU -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display="block";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.display="none";
+        }
+    </script>
+
 </body>
 </html>
