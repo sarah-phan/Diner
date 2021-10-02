@@ -211,3 +211,15 @@ header i{
     font-size: 18px;
     line-height: 28px;
 }
+
+/* CAROUSEL */
+
+.dinerCarousel{
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(../img/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 700px;
+    
+}
