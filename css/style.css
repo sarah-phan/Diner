@@ -223,7 +223,7 @@ header i{
     min-height: 700px;
     
 }
-.dinerCarousel .dinerCarousel_content{
+.dinerCarousel .dinerCarousel__content{
     position: relative;
     top: 200px;
     margin-left: 200px;
@@ -231,7 +231,7 @@ header i{
     margin-bottom: 20px;
     max-width: 600px;
 }
-.dinerCarousel .dinerCarousel_content h3{
+.dinerCarousel .dinerCarousel__content h3{
     font-size: 44px;
     line-height: 53px;
     font-weight: 600;
@@ -261,4 +261,28 @@ header i{
 }
 .btn-carousel:hover i{
     color: tomato; 
+}
+
+/* ABOUT US  */
+.about {
+    height: 350px;
+}
+.about__content h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.about__content h3{
+    font-size: 32px;
+    line-height: 40px;
+}
+.about__content p{
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(158 148 152);
+    font-family: 'Quicksand', sans-serif;
 }
