@@ -223,3 +223,42 @@ header i{
     min-height: 700px;
     
 }
+.dinerCarousel .dinerCarousel_content{
+    position: relative;
+    top: 200px;
+    margin-left: 200px;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+.dinerCarousel .dinerCarousel_content h3{
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.btn-carousel{
+    padding: 15px 40px;
+    margin-top: 50px;
+    position: absolute;
+    border: solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-carousel i{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.btn-carousel:hover{
+    background-color: white;
+    color: tomato;
+}
+.btn-carousel:hover i{
+    color: tomato; 
+}
