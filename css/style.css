@@ -11,7 +11,25 @@ a, a:hover{
 }
 i{
     color: #ff6600;
+    border-radius: 6px;
 }
+.title h1{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.title p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+p{
+    margin: 0;
+}
+
 
 /* HEADER */
 header .container{
@@ -68,7 +86,6 @@ header i{
 }
 .header__dark i{
     font-size: 21px;
-
 }
 /* Dark Theme */
 .dark #myBody{
@@ -125,10 +142,72 @@ header i{
     text-align: center;
     line-height: 40px;
     border-radius: 6px;
-  }
+}
 .header__nav span{
       cursor: pointer;
       font-size: 30px;
       padding: 0 8px;
       text-align: center;
+}
+
+/*Book*/
+.book{
+    background-color: #ff6600;
+}
+.book__banner{
+    background-image: url(../img/banner3.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.book__img{
+    position: absolute;
+    background-color: rgb(16 15 19 / 46%);
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.book .col{
+    max-width: 100%;
+    padding: 0;
+}
+.book .title p{
+    color:#fff;
+}
+.book__content p{
+    color: #ffdfc9;
+}
+.book__comment i{
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.book__deals:hover i, .book__food:hover i{
+    color: #ffc600;
+}
+.book .content p{
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.book__comment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.book__comment a{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: black;
+    display: block;
+}
+.book__comment p{
+    font-size: 18px;
+    line-height: 28px;
 }
