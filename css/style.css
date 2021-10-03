@@ -211,3 +211,80 @@ header i{
     font-size: 18px;
     line-height: 28px;
 }
+
+/* CAROUSEL */
+
+.dinerCarousel{
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(../img/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 700px;
+    
+}
+.dinerCarousel .dinerCarousel__content{
+    position: relative;
+    top: 200px;
+    margin-left: 200px;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+.dinerCarousel .dinerCarousel__content h3{
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.btn-carousel{
+    padding: 15px 40px;
+    margin-top: 50px;
+    position: absolute;
+    border: solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-carousel i{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.btn-carousel:hover{
+    background-color: white;
+    color: tomato;
+}
+.btn-carousel:hover i{
+    color: tomato; 
+}
+
+/* ABOUT US  */
+.about {
+    height: 350px;
+    align-items: center;
+    display: flex;
+}
+.about__content h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+.about__content h3{
+    font-size: 32px;
+    line-height: 40px;
+}
+.about__content p{
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(158 148 152);
+    font-family: 'Quicksand', sans-serif;
+}
