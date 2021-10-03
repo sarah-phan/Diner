@@ -266,6 +266,8 @@ header i{
 /* ABOUT US  */
 .about {
     height: 350px;
+    align-items: center;
+    display: flex;
 }
 .about__content h6{
     font-size: 20px;
