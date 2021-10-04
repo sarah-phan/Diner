@@ -157,57 +157,6 @@ header i{
       padding: 0 8px;
       text-align: center;
 }
-
-/* CAROUSEL */
-.dinerCarousel{
-    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
-    url(../img/banner1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 700px;   
-}
-.dinerCarousel .dinerCarousel__content{
-    position: relative;
-    top: 200px;
-    margin-left: 200px;
-    color: white;
-    margin-bottom: 20px;
-    max-width: 600px;
-}
-.dinerCarousel .dinerCarousel__content h3{
-    font-size: 44px;
-    line-height: 53px;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    text-transform: capitalize;
-    color: #fff;
-}
-
-.btn-carousel{
-    padding: 15px 40px;
-    margin-top: 50px;
-    position: absolute;
-    border: solid white;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 20px;
-}
-.btn-carousel i{
-    color: white;
-    margin-left: 20px;
-    font-size: 25px;
-}
-.btn-carousel:hover{
-    background-color: white;
-    color: tomato;
-}
-.btn-carousel:hover i{
-    color: tomato; 
-}
-
-
 /*Book*/
 .book{
     background-color: #ff6600;
@@ -274,11 +223,65 @@ header i{
     line-height: 28px;
 }
 
+/* CAROUSEL */
+
+.dinerCarousel{
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(../img/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 700px;
+    
+}
+.dinerCarousel .dinerCarousel__content{
+    position: relative;
+    color: white;
+    max-width: 600px;
+}
+.dinerCarousel .dinerCarousel__content h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-carousel{
+    padding: 15px 40px;
+    margin-top: 30px;
+    position: absolute;
+    border: solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-carousel span{
+    color: white;
+}
+.btn-carousel i{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+}
+.btn-carousel:hover{
+    background-color: white;
+    color: tomato;
+}
+.btn-carousel:hover i{
+    color: tomato; 
+}
+.btn-carousel:hover span{
+    color: tomato;
+}
 /* ABOUT US  */
 .about {
-    height: 350px;
+    height: 400px;
     align-items: center;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about .title p, .about .title h1{
     text-align: left;
@@ -293,10 +296,16 @@ header i{
     font-family: 'Pacifico', cursive;
 }
 .about__content h3{
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
 }
+
+
 .about__content p{
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 28px;
     color: rgb(158 148 152);
