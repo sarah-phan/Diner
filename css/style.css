@@ -343,3 +343,121 @@ header i{
     font-size: 18px;
     letter-spacing: 1px;
 }
+
+/* NUMBER */
+.number__banner{
+    background-image: url(../img/banner2.jpg);
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+}
+.number__content{
+    position: relative;
+}
+.number__banner::after{
+    content: "";
+    background-color: rgb(16 15 19 / 66%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.number__text{
+    position: absolute;
+    top: 21%;
+    left: 30%;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+}
+.number__text h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.number__button a{
+    color:#fff;
+    padding: 15px 60px 15px 45px;
+    border-radius: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+.number__button i{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 11px;
+    padding-left: 10px;
+}
+.number__button .button1{
+    border: 2px solid white;
+    transition: all 0.4s;
+}
+.number__button .button2{
+    background-color: #ff6600;
+    border: 2px solid #ff6600;
+    transition: all 0.4s;
+}
+.number__button .button1:hover{
+    background-color: white;
+    color: #ff6600;
+}
+.number__button .button2:hover{
+    background-color: rgba(255, 102, 0, 0.8);
+    border: 2px solid rgba(255, 102, 0, 0.1);
+    color:rgba(255, 255, 255, 0.75);
+}
+.number__button .button1:hover i{
+    color: #ff6600;
+}
+.number__button .button2:hover i{
+    color:rgba(255, 255, 255, 0.75);
+}
+
+.number{
+    position: relative;
+}
+.number .row{
+    position: absolute;
+    bottom: -180px;
+}
+.number__bg{
+    background-color: #fff;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    padding: 40px 60px;
+    width: 265px;
+    border-radius: 6px;
+    transform: translateY(4px);
+    transition: all 0.5s;
+}
+.number__bg:hover{
+    transform: translateY(0);
+    box-shadow: rgb(46 41 51 / 8%) -2px 5px 0px 0px, rgb(46 41 51 / 8%) 2px 5px 0px 0px;
+}
+.number__icon{
+    text-align: center;
+}
+.number__icon i{
+    color: white;
+    background-color: #ff6600;
+    font-size: 26px;
+    width: 68px;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+    border-radius: 35px;
+}
+.number__scroller{
+    font-weight: 600;
+    text-align: center;
+}
+.number__scroller span{
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.number__scroller p{
+    font-size: 16px;
+    color: rgba(22, 28, 45, 0.7);
+}
