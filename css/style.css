@@ -423,14 +423,6 @@ header i{
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 15%);
 }
 
-
-
-
-
-
-
-
-
 /* NUMBER */
 .number__banner{
     background-image: url(../img/banner2.jpg);
@@ -549,3 +541,106 @@ header i{
     color: rgba(22, 28, 45, 0.7);
 }
 
+/* VIDEO  */
+.video{
+    height: 500px;
+}
+/* POST  */
+.post{
+    background-color: #f7f7f7;
+}
+.post__pos{
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+.post__pos span{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    opacity: 1;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+    letter-spacing: .02em;
+}
+.post__pos i{
+    color: white;
+    
+}
+.card{
+    background-color: #f7f7f7;
+    border: none;
+}
+.card img{
+    border-radius: 5px  ;
+}
+.post__pos .post__reciepe{
+    background: #ff6600;
+    color: #fff;
+    padding: 3px 20px;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    letter-spacing: .05em;
+}
+
+.card-body{
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.card-body a{
+    display: block;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+.card-body p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7);
+    font-family: 'Quicksand', sans-serif;
+}
+.post__footer{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__meta{
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: flex-start;
+    
+}
+.post__meta img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.post__footer a{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: #232121;
+    opacity: .9;
+    margin-right: 10px;
+}
+.post__footer i{
+    color: #232121;
+}
+.post__readMore a:hover{
+    color: #ff6600;
+}
+.post__readMore a:hover i{
+    color: #ff6600;
+}
