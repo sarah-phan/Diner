@@ -461,3 +461,70 @@ header i{
     font-size: 16px;
     color: rgba(22, 28, 45, 0.7);
 }
+
+/* TESTIMONIAL */
+.testimonial{
+    margin-top: 250px; /* Sẽ thay đổi sau khi thêm những phần trên */
+}
+.testimonial .title h1{
+    margin-bottom: 50px;
+}
+.testimonial__carousel{
+    margin: auto;
+    width: 80%;
+}
+.testimonial__img a{
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin: auto;
+}
+.testimonial__img img{
+    width: 100%;
+    border-radius: 60px;
+}
+.testimonial__title p{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+.testimonial__title::before{
+    content:"''";
+    font-size: 50px;
+    font-weight: 600;
+    color: #ff6600;
+    display: block;
+    height: 55px;
+    text-align: center;
+}
+.testimonial__comment p {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(22, 28, 45, 0.7);
+    margin: 0 100px;
+}
+.testimonial__bottom p:first-of-type{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.testimonial__bottom p:last-of-type{
+    font-size: 18px;
+    color: rgba(22, 28, 45, 0.7);
+    text-align: center;
+}
+.testimonial .slick-dots li.slick-active button::before{
+    color:#ff6600;
+}
+.testimonial .slick-dots li button::before{
+    font-size: 12px;
+}
+.testimonial .slick-dots{
+    bottom: -55px;
+}
+.testimonial .slick-dots li{
+    margin: 0 3px;
+}
