@@ -430,8 +430,22 @@
         </div>
     </section>
     <section class="video">
-        <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
-            allowfullscreen=""></iframe>
+        <div class="container">
+            <div class="video__bg">
+                <a href="#small-dialog1" class="play-icon popup-with-zoom-anim ">
+                    <span class="video-play-icon video__icon">
+                        <span class="fa fa-play video__play"></span>
+                    </span>
+                </a>
+                <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
+                    <div class="agileits_modal_body ">
+                        <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
+                            allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
     </section>
     <section class="post">
         <div class="container">
@@ -644,15 +658,13 @@
         <div class="container py-5">
             <div class="row footer__content">
                 <div class="col-4">
-                    <div class="footer__dinner">
-                        <h2>
-                            <a href="http://">Diner</a>
-                        </h2>
+                    <div>
+                        <a class="footer__dinner" href="#">Diner</a>
                     </div>
                     <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
                         in ligula. Semper at
                         tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
-                    <div class="footer__icon">
+                    <div class="footer__icon mt-5">
                         <a class="icon__footer" href="http://">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -699,18 +711,15 @@
                     <p>Enter your email and receive the latest news, updates and special
                         offers from us.</p>
                     <form>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Your Email Address">
+                        <div class="mb-3 mt-5">
+                            <input type="email" class="form-control" placeholder="Your Email Address">
                         </div>
-                        <button class="btn btn-footer">Subcise Now</button>
+                        <button class="btn btn-footer w-100 mt-3">Subcise Now</button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
-    <footer></footer>
-
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -749,6 +758,35 @@
         });
     </script>
 
+
+
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+    
+    <!-- POPUP  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: "auto",
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+            });
+        });
+    </script>
 </body>
 
 </html>
