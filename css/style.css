@@ -913,7 +913,28 @@ footer {
     color: #ff6600;
 }
 
-
+.footer__last{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.footer__last1 a{
+    color: #ff6600;
+    margin-left: 5px;
+}
+.footer__last1 span{
+    color: #a5a2a1;
+}
+.footer__last1 a:hover{
+    color: white;
+}
+.footer__last2 a{
+    color: #a5a2a1;
+    margin-left: 50px;
+}
+.footer__last2 a:hover{
+    color: #ff6600;
+}
 
 
 /* TESTIMONIAL */
@@ -984,7 +1005,32 @@ footer {
     margin: 0 3px;
 }
 
+/* BACKTOTOP  */
 
+.backtotop{
+    width: 50PX;
+    height: 50PX;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    /* ẩn nút backtotop  */
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+}
+.backToTop__icon i{
+    color: white;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 0.7;
+  }
 
 
 /* Keyframes */
