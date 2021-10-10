@@ -798,8 +798,8 @@ header i{
 }
 .card-body a{
     display: block;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 30px;
     font-weight: 600;
     color: var(--heading-color);
     margin-bottom: 15px;
@@ -869,7 +869,9 @@ header i{
 footer {
     background-color: #000000;
 }
-
+.footer__content{
+    margin-right: -50px;
+}
 .footer__content h2{
     font-size: 22px;
     line-height: 28px;
@@ -964,7 +966,7 @@ footer {
 .footer__last{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .footer__last1 a{
     color: #ff6600;
@@ -977,13 +979,16 @@ footer {
     color: white;
 }
 .footer__last2 a{
-    color: #a5a2a1;
+    color: #444342;
     margin-left: 50px;
 }
 .footer__last2 a:hover{
     color: #ff6600;
 }
 
+.footer__hr{
+  margin-top: 50px;
+}
 
 /* TESTIMONIAL */
 .testimonial .title h1{
@@ -1070,7 +1075,7 @@ footer {
     height: 50PX;
     background-color: #ff6600;
     color: white;
-    font-size: 20px;
+    font-size: 1.3rem;
     text-align: center;
     line-height: 50px;
     display: block;
@@ -1085,9 +1090,7 @@ footer {
 .cd-top--is-visible {
     visibility: visible;
     opacity: 1;
-}
-
-
+  }
 /* Keyframes */
 
 @keyframes ripple {
