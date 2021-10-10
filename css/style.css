@@ -108,9 +108,7 @@ header i{
 .dark#myBody .title h1{
     color: white;
 }
-.dark#myBody p, .dark#myBody span{
-    color: white;
-}
+
 /* Nav */
 .header__overlay {  
     height: 100%;
@@ -163,6 +161,10 @@ header i{
       padding: 0 8px;
       text-align: center;
 }
+.dark#myBody form input{
+    background-color: #232220;
+}
+
 /*Book*/
 .book{
     background-color: #ff6600;
@@ -299,16 +301,16 @@ header i{
     line-height: 27px;
     color: rgba(22, 28, 45, 0.7);
 }
+.dark#myBody .about__content p{
+    color: #c2d0da;
+}
 
 /* NEWS */
-#darkTheme{
+#myBody .news{
     background-color: #f7f7f7;
 }
-.dark#darkTheme{
+.dark#myBody .news{
     background-color: #282828;
-}
-.dark#darkTheme .title p{
-    color: #ff6600;
 }
 .news__image img{
     width: 100%;
@@ -433,6 +435,18 @@ header i{
 .type__content:hover{
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 15%);
 }
+.dark .type__content{
+    background-color: #232220;
+}
+.dark#myBody .type__info a{
+    color: white;
+}
+.dark#myBody .type__content p{
+    color: #c2d0da;
+}
+.dark#myBody .type__content{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 /* NUMBER */
 .number__banner{
@@ -550,6 +564,14 @@ header i{
 .number__scroller p{
     font-size: 16px;
     color: rgba(22, 28, 45, 0.7);
+}
+
+.dark#myBody .number__bg{
+    background-color: #232220;
+    color: white;
+}
+.dark#myBody .number__scroller p{
+    color:#c2d0da;
 }
 
 /* VIDEO  */
@@ -829,6 +851,20 @@ header i{
     color: #ff6600;
 }
 
+.dark#myBody .post{
+    background-color: #282828;
+}
+.dark#myBody .card{
+    background-color: #282828;
+    color: white;
+}
+.dark#myBody .card a{
+    color: white;
+}
+.dark#myBody .card p{
+    color: #c2d0da;
+}
+
 /* FOOTER  */
 footer {
     background-color: #000000;
@@ -1013,6 +1049,20 @@ footer {
     margin: 0 3px;
 }
 
+.dark#myBody .testimonial__bg{
+    color: white;
+}
+.dark#myBody .testimonial__comment p, .dark#myBody .testimonial__bottom p:nth-of-type(2){
+    color: #c2d0da;
+}
+.dark#myBody .slick-dots li button::before{
+    color: white;
+    opacity: 1;
+}
+.dark#myBody .slick-dots li.slick-active button::before{
+    color:#ff6600;
+}
+
 /* BACKTOTOP  */
 
 .backtotop{
@@ -1020,7 +1070,7 @@ footer {
     height: 50PX;
     background-color: #ff6600;
     color: white;
-    font-size: 1rem;
+    font-size: 20px;
     text-align: center;
     line-height: 50px;
     display: block;
@@ -1034,8 +1084,8 @@ footer {
 }
 .cd-top--is-visible {
     visibility: visible;
-    opacity: 0.7;
-  }
+    opacity: 1;
+}
 
 
 /* Keyframes */
