@@ -50,7 +50,7 @@
                 <div class="header__search">
                     <div class="header__form">
                         <form>
-                            <input id="myBody" type="search" placeholder="Search here..">
+                            <input type="search" placeholder="Search here..">
                         </form>
                     </div>
                     <div class="header__icon">
@@ -129,7 +129,7 @@
             </div>
         </div>
     </section>
-    <section class="book my-5">
+    <section class="book">
         <div class="row">
             <div class="col-6">
                 <div class="book__banner">
@@ -167,7 +167,7 @@
         </div>
     </section>
     <section class="news py-5 py-2">
-        <div class="container">
+        <div class="container py-5">
             <div class="title mb-5">
                 <p>What's New</p>
                 <h1 class="mb-5">Popular Categories</h1>
@@ -258,10 +258,10 @@
         </div>
     </section>
     <section class="type py-5">
-        <div class="container py-5 ">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-4 my-3">
-                    <div class="type__content">
+                    <div class="type__content" >
                         <div class="type__wrap">
                             <div class="type__icon">
                                 <span class="fa fa-users"></span>
@@ -447,7 +447,7 @@
         
         </div>
     </section>
-    <section class="post">
+    <section class="post">   
         <div class="container">
             <div class="title">
                 <p>Latest Posts</p>
@@ -550,7 +550,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial py-5">
+    <section class="testimonial my-5 py-5">
         <div class="testimonial__content container">
             <div class="title">
                 <p>Testimonials</p>
@@ -654,7 +654,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="py-4">
         <div class="container py-5">
             <div class="row footer__content">
                 <div class="col-4">
@@ -735,7 +735,9 @@
     <!-- back to top  -->
     <a href="#" class="backtotop cd-top text-replace js-cd-top">
         <div class="backToTop__icon">
-            <i class="fa fa-arrow-up"></i>
+            
+      ⤴
+    
         </div>
     </a>
 
@@ -755,8 +757,9 @@
 
     <!-- DARK THEME -->
     <script>
-        document.getElementById("switchButton").onclick = function () { document.getElementById("myBody").classList.toggle("dark"); };
+        document.getElementById("switchButton").onclick = function () { document.getElementById("myBody").classList.toggle("dark");};
     </script>
+
 
     <!-- SUBMENU -->
     <script>
@@ -778,12 +781,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $('.single-item').slick({
-            dots: true
+            dots: true,
+            arrows: false
         });
     </script>
-
-
-
     <script>
         var myModal = document.getElementById('myModal')
         var myInput = document.getElementById('myInput')
