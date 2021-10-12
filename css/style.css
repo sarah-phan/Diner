@@ -469,8 +469,8 @@ header i{
 .number__text{
     position: absolute;
     top: 21%;
-    left: 30%;
-    width: 40%;
+    max-width: 100%;
+    padding: 0 30%;
     text-align: center;
     color: #fff;
 }
@@ -1098,7 +1098,50 @@ footer {
       box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
     }
 }
-
+@media screen and (max-width: 1200px){
+    .number__text{
+        max-width: 100%;
+        padding: 0 20%;
+    }
+    .number__bg{
+        width: 212px; 
+    }
+    .testimonial .container{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 665px;
+    }
+}
+@media screen and (max-width: 992px){
+    .book__banner{
+        min-height: 185px;
+        margin: 50px 10px;
+    }
+    .number__text h1{
+        font-size: 40px;
+    }
+    .number__text{
+        max-width: 90%;
+        padding: 0 7%;
+    }
+    .testimonial .container{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial .container{
+        max-width: 965px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 677px;
+        margin: 0 45px;
+    }
+}
 @media screen and (max-width: 768px){
     .dinerCarousel{
         margin-top: 65px;
@@ -1106,7 +1149,36 @@ footer {
     header{
         margin-top: 60px;
     }
-
+    .number__text h1{
+        font-size: 35px;
+    }
+    .number__text{
+        max-width: 95%;
+        padding: 0 13%;
+    }
+    .number .row{
+        position: unset;
+        margin-right: -35px;
+        margin-left: -35px;
+    }
+    .number .col-6{
+        margin-top: 45px;
+    }
+    .number__banner{
+        height: 330px;
+    }
+    .testimonial{
+        width: 98%;
+    }
+    .testimonial .container{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 510px;
+        margin: 0 27px;
+    }
 }
 @media screen and (max-width: 576px){
     .header__form form, .header__icon{
@@ -1136,7 +1208,6 @@ footer {
     .dinerCarousel{
         width: 148%;
     }
-   
     .book__content{
         margin: 0 37px;
     }
@@ -1157,11 +1228,55 @@ footer {
         text-align: center;
         font-size: 35px;
     }
-}
-@media screen and (max-width: 992px){
-    .book__banner{
-        min-height: 185px;
-        margin: 50px 10px;
+
+    .number__text h1{
+        font-size: 25px;
+    }
+    .number__text{
+        max-width: 120%;
+        padding: 0 4%;
+    }
+    .number__button a{
+        padding: 16px;
+        padding-right: 37px;
+        margin: 0 4px;
+    }
+    .number__button i{
+        top: 16px;
+        right: 14px;
+    }
+    .number__banner{
+        height: 330px;
+    }
+    .testimonial .container{
+        max-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 386px;
+        margin: 0 22px;
+        font-size: 16px;
+    }
+    .testimonial{
+        width: 105%;
     }
 }
-
+@media screen and (max-width: 400px){
+    .testimonial{
+        width: 105%;
+    }
+    .testimonial .container{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 295px;
+        margin: 0 0px;
+        font-size: 16px;
+    }
+    .testimonial__title p{
+        font-size: 20px;
+    }
+}
