@@ -1099,7 +1099,6 @@ footer {
     }
 }
 
-
 @media screen and (max-width: 768px){
     .dinerCarousel{
         margin-top: 65px;
@@ -1107,6 +1106,7 @@ footer {
     header{
         margin-top: 60px;
     }
+
 }
 @media screen and (max-width: 576px){
     .header__form form, .header__icon{
@@ -1136,9 +1136,7 @@ footer {
     .dinerCarousel{
         width: 148%;
     }
-    .book{
-        width: 145%;
-    }
+   
     .book__content{
         margin: 0 37px;
     }
@@ -1166,3 +1164,4 @@ footer {
         margin: 50px 10px;
     }
 }
+
