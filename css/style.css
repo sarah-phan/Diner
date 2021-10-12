@@ -285,7 +285,6 @@ header i{
 
 /* ABOUT US  */
 .about {
-    height: 400px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -779,6 +778,7 @@ header i{
 }
 .card img{
     border-radius: 5px  ;
+    width: 100%;
 }
 .post__pos .post__reciepe{
     background: #ff6600;
@@ -963,11 +963,11 @@ footer {
     color: #ff6600;
 }
 
-.footer__last{
+/* .footer__last{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-}
+} */
 .footer__last1 a{
     color: #ff6600;
     margin-left: 5px;
@@ -980,7 +980,7 @@ footer {
 }
 .footer__last2 a{
     color: #444342;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .footer__last2 a:hover{
     color: #ff6600;
@@ -1103,3 +1103,11 @@ footer {
     }
   }
   
+/* RESPONSIVE  */
+
+@media screen and (max-width:992px) {
+    .dinerCarousel .dinerCarousel__content h3{
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
