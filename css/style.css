@@ -254,7 +254,6 @@ header i{
     color: #fff;
     font-family: 'Quicksand', sans-serif;
 }
-
 .btn-carousel{
     padding: 15px 40px;
     margin-top: 30px;
@@ -469,8 +468,8 @@ header i{
 .number__text{
     position: absolute;
     top: 21%;
-    left: 30%;
-    width: 40%;
+    max-width: 100%;
+    padding: 0 30%;
     text-align: center;
     color: #fff;
 }
@@ -951,11 +950,9 @@ footer {
     color: white;
     opacity: 0.7;
 }
-
 .footer__content ul{
     list-style: none;
 }
-
 .footer__content li{
     margin-top: 10px;
 }
@@ -963,11 +960,7 @@ footer {
     color: #ff6600;
 }
 
-/* .footer__last{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-} */
+
 .footer__last1 a{
     color: #ff6600;
     margin-left: 5px;
@@ -985,9 +978,8 @@ footer {
 .footer__last2 a:hover{
     color: #ff6600;
 }
-
-.footer__hr{
-  margin-top: 50px;
+.footer__bottom{
+    border-top: 1px solid rgb(255 255 255 / 5%);
 }
 
 /* TESTIMONIAL */
@@ -1105,9 +1097,189 @@ footer {
   
 /* RESPONSIVE  */
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 1200px){
+    .number__text{
+        max-width: 100%;
+        padding: 0 20%;
+    }
+    .number__bg{
+        width: 212px; 
+    }
+    .testimonial .container{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 665px;
+    }
+}
+@media screen and (max-width: 992px){
+    .book__banner{
+        min-height: 185px;
+        margin: 50px 10px;
+    }
+    .number__text h1{
+        font-size: 40px;
+    }
+    .number__text{
+        max-width: 90%;
+        padding: 0 7%;
+    }
+    .testimonial .container{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial .container{
+        max-width: 965px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 677px;
+        margin: 0 45px;
+    }
     .dinerCarousel .dinerCarousel__content h3{
         font-size: 44px;
         line-height: 53px;
+    }
+}
+@media screen and (max-width: 768px){
+    .dinerCarousel{
+        margin-top: 65px;
+    }
+    header{
+        margin-top: 60px;
+    }
+    .number__text h1{
+        font-size: 35px;
+    }
+    .number__text{
+        max-width: 95%;
+        padding: 0 13%;
+    }
+    .number .row{
+        position: unset;
+        margin-right: -35px;
+        margin-left: -35px;
+    }
+    .number .col-6{
+        margin-top: 45px;
+    }
+    .number__banner{
+        height: 330px;
+    }
+    .testimonial{
+        width: 98%;
+    }
+    .testimonial .container{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 510px;
+        margin: 0 27px;
+    }
+}
+@media screen and (max-width: 576px){
+    .header__form form, .header__icon{
+        visibility: hidden;
+        opacity: 0;
+    }
+    header .container{
+        width: 92%;
+    }
+    header a{
+        font-size: 54px;
+    }
+    .header__dark i{
+        font-size: 30px;
+        padding-right: 30px;
+    }
+    .header__nav .fa-bars i{
+        font-size: 45px;
+    }
+    header{
+        top: 25px;
+        left: -13px;
+    }
+    .header__nav .fa-times i{
+        font-size: 12px;
+    }
+    .dinerCarousel{
+        width: 148%;
+    }
+    .book__content{
+        margin: 0 37px;
+    }
+    .book__content .content p, .book__comment p, .book__comment a{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .book__comment{
+        width: 110%;
+    }
+    .book__food{
+        margin-left: 25px;
+    }
+    .book__comment i{
+        width: 110px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .number__text h1{
+        font-size: 25px;
+    }
+    .number__text{
+        max-width: 120%;
+        padding: 0 4%;
+    }
+    .number__button a{
+        padding: 16px;
+        padding-right: 37px;
+        margin: 0 4px;
+    }
+    .number__button i{
+        top: 16px;
+        right: 14px;
+    }
+    .number__banner{
+        height: 330px;
+    }
+    .testimonial .container{
+        max-width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 386px;
+        margin: 0 22px;
+        font-size: 16px;
+    }
+    .testimonial{
+        width: 105%;
+    }
+}
+@media screen and (max-width: 400px){
+    .testimonial{
+        width: 105%;
+    }
+    .testimonial .container{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial__comment p{
+        width: 295px;
+        margin: 0 0px;
+        font-size: 16px;
+    }
+    .testimonial__title p{
+        font-size: 20px;
     }
 }
