@@ -1153,6 +1153,9 @@ footer {
         font-size: 44px;
         line-height: 53px;
     }
+    .about .title h1{
+        font-size: 32px;
+    }
 }
 @media screen and (max-width: 768px){
     .dinerCarousel{
@@ -1240,7 +1243,6 @@ footer {
         text-align: center;
         font-size: 35px;
     }
-
     .number__text h1{
         font-size: 25px;
     }
@@ -1288,7 +1290,6 @@ footer {
         text-align: left;
     }
     .about__content p{
-        font-size: 16px;
         line-height: 26px;
     }
     .about .title p{
@@ -1299,15 +1300,12 @@ footer {
         line-height: 36px;
     }
     .type__content p{
-        font-size: 16px;
+        font-size: 18px;
         line-height: 26px;
     }
     .type__info h5 a{
-        font-size: 20px;
+        font-size: 22px;
     }
-}
-@media screen and (max-width: 480px){
-
 }
 @media screen and (max-width: 400px){
     .testimonial{
