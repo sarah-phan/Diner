@@ -254,6 +254,13 @@ header i{
     color: #fff;
     font-family: 'Quicksand', sans-serif;
 }
+.dinerCarousel .dinerCarousel__content p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Quicksand', sans-serif;
+}
 .btn-carousel{
     padding: 15px 40px;
     margin-top: 30px;
@@ -893,10 +900,11 @@ footer {
 .footer__content a{
     display: block;
     color: #a5a2a1;
+    line-height: 28px;
 }
 .footer__content p{
     font-size: 17px;
-    line-height: 26px;
+    line-height: 28 px;
     color: #a5a2a1;
 }
 .icon__footer{
@@ -972,8 +980,9 @@ footer {
     color: white;
 }
 .footer__last2 a{
-    color: #444342;
+    color: #a5a2a1;
     margin-left: 30px;
+    line-height: 28px;
 }
 .footer__last2 a:hover{
     color: #ff6600;
@@ -1264,6 +1273,41 @@ footer {
     .testimonial{
         width: 105%;
     }
+
+    .dinerCarousel .container{
+        max-width: 540px;
+    }
+    .dinerCarousel__content {
+        text-align: left;
+        width: 100%;
+        margin-left: -100px;
+    }
+    .dinerCarousel .dinerCarousel__content h3{
+        font-size: 28px;
+        line-height: 38px;
+        text-align: left;
+    }
+    .about__content p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about .title p{
+        font-size: 16px;
+    }
+    .about .title h1{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .type__content p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .type__info h5 a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+
 }
 @media screen and (max-width: 400px){
     .testimonial{
@@ -1282,4 +1326,18 @@ footer {
     .testimonial__title p{
         font-size: 20px;
     }
-}
+    .dinerCarousel .dinerCarousel__content p{
+        font-size: 13px;
+        line-height: 26px;
+       
+    }
+    .dinerCarousel .dinerCarousel__content h3{
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .dinerCarousel__content {
+        text-align: left;
+        width: 100%;
+        margin-left: -30px;
+    }
+}    
