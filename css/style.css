@@ -254,6 +254,13 @@ header i{
     color: #fff;
     font-family: 'Quicksand', sans-serif;
 }
+.dinerCarousel .dinerCarousel__content p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Quicksand', sans-serif;
+}
 .btn-carousel{
     padding: 15px 40px;
     margin-top: 30px;
@@ -284,7 +291,6 @@ header i{
 
 /* ABOUT US  */
 .about {
-    height: 400px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -778,6 +784,7 @@ header i{
 }
 .card img{
     border-radius: 5px  ;
+    width: 100%;
 }
 .post__pos .post__reciepe{
     background: #ff6600;
@@ -893,10 +900,11 @@ footer {
 .footer__content a{
     display: block;
     color: #a5a2a1;
+    line-height: 28px;
 }
 .footer__content p{
     font-size: 17px;
-    line-height: 26px;
+    line-height: 28 px;
     color: #a5a2a1;
 }
 .icon__footer{
@@ -960,11 +968,7 @@ footer {
     color: #ff6600;
 }
 
-.footer__last{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
+
 .footer__last1 a{
     color: #ff6600;
     margin-left: 5px;
@@ -976,8 +980,9 @@ footer {
     color: white;
 }
 .footer__last2 a{
-    color: #444342;
-    margin-left: 50px;
+    color: #a5a2a1;
+    margin-left: 30px;
+    line-height: 28px;
 }
 .footer__last2 a:hover{
     color: #ff6600;
@@ -1097,7 +1102,10 @@ footer {
     100% {
       box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
     }
-}
+  }
+  
+/* RESPONSIVE  */
+
 @media screen and (max-width: 1200px){
     .number__text{
         max-width: 100%;
@@ -1140,6 +1148,10 @@ footer {
     .testimonial__comment p{
         width: 677px;
         margin: 0 45px;
+    }
+    .dinerCarousel .dinerCarousel__content h3{
+        font-size: 44px;
+        line-height: 53px;
     }
 }
 @media screen and (max-width: 768px){
@@ -1261,6 +1273,41 @@ footer {
     .testimonial{
         width: 105%;
     }
+
+    .dinerCarousel .container{
+        max-width: 540px;
+    }
+    .dinerCarousel__content {
+        text-align: left;
+        width: 100%;
+        margin-left: -100px;
+    }
+    .dinerCarousel .dinerCarousel__content h3{
+        font-size: 28px;
+        line-height: 38px;
+        text-align: left;
+    }
+    .about__content p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about .title p{
+        font-size: 16px;
+    }
+    .about .title h1{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .type__content p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .type__info h5 a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+
 }
 @media screen and (max-width: 400px){
     .testimonial{
@@ -1279,4 +1326,18 @@ footer {
     .testimonial__title p{
         font-size: 20px;
     }
-}
+    .dinerCarousel .dinerCarousel__content p{
+        font-size: 13px;
+        line-height: 26px;
+       
+    }
+    .dinerCarousel .dinerCarousel__content h3{
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .dinerCarousel__content {
+        text-align: left;
+        width: 100%;
+        margin-left: -30px;
+    }
+}    
